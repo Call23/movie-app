@@ -1,6 +1,7 @@
 import { StyleSheet, Text, View } from "react-native";
 
 import { Colors } from "../constants/colors";
+
 const ThemedView = ({ ...props }) => {
   return <View style={styles.container} {...props} />;
 };

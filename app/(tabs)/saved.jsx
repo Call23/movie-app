@@ -1,11 +1,12 @@
 import { StyleSheet, Text, View } from "react-native";
 import React from "react";
+import ThemedView from "../../components/ThemedView";
 
 const Saved = () => {
   return (
-    <View>
+    <ThemedView>
       <Text> Saved</Text>
-    </View>
+    </ThemedView>
   );
 };
 

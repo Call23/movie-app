@@ -4,15 +4,15 @@ import { Colors } from "../constants/colors";
 
 import searchImage from "../assets/icons/search.png";
 
-const SearchBar = ({ placeholder, onPress }) => {
+const SearchBar = ({ placeholder, onPress, value, onChangeText }) => {
   return (
     <View style={styles.searchBar}>
       <Image source={searchImage} style={styles.searchIcon} />
       <TextInput
         onPress={onPress}
         placeholder={placeholder}
-        value=""
-        onChangeText={() => {}}
+        value={value}
+        onChangeText={onChangeText}
         placeholderTextColor="#a8b5db"
         style={styles.textInput}
       />
